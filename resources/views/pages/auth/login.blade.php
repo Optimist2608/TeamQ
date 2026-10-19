@@ -1,4 +1,4 @@
-@extends("layouts.main")
+@extends("layouts.app")
 
 @section("title", "Поиск тиммейтов для игр")
 
@@ -15,7 +15,7 @@
                                                                                     placeholder="••••••••"></label>
                 <div class="toolbar"><label class="check" style="margin:0"><input type="checkbox"> Запомнить
                         меня</label><a
-                        class="link" href="#">Забыл пароль?</a></div>
+                            class="link" href="#">Забыл пароль?</a></div>
                 <button class="btn btn--primary btn--lg btn--block" type="submit">Войти</button>
                 <p class="auth__footer">Нет аккаунта? <a class="link" href="register.blade.php">Регистрация</a></p>
             </form>

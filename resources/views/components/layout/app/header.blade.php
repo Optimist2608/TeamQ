@@ -27,14 +27,14 @@
 
 
 {{--<header class="header" data-header>--}}
-{{--    <a class="header__logo" href="../index.blade.php"><span class="header__logo-badge">Q</span>Team<span--}}
+{{--    <a class="header__logo" href="../show.blade.php"><span class="header__logo-badge">Q</span>Team<span--}}
 {{--            class="header__logo-accent">Q</span></a>--}}
 {{--    <button class="header__burger" type="button" aria-expanded="false" aria-label="Меню" data-burger>☰</button>--}}
 {{--    <nav class="header__nav">--}}
-{{--        <a class="header__link" href="../index.blade.php">🏠 Главная</a>--}}
+{{--        <a class="header__link" href="../show.blade.php">🏠 Главная</a>--}}
 {{--        <a class="header__link" href="games.blade.php">🎮 Игры</a>--}}
-{{--        <a class="header__link" href="posts.blade.php">🔍 Поиск</a>--}}
-{{--        <a class="header__link" href="chats.blade.php">💬 Чаты <span class="header__badge">3</span></a>--}}
+{{--        <a class="header__link" href="profile.blade.php">🔍 Поиск</a>--}}
+{{--        <a class="header__link" href="profile.blade.php">💬 Чаты <span class="header__badge">3</span></a>--}}
 {{--    </nav>--}}
 {{--    <div class="header__actions"><a class="header__user" href="dashboard.html"><span--}}
 {{--                class="posts-card__avatar">🐸</span>PepeCarry</a>--}}

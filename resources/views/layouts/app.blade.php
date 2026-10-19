@@ -17,11 +17,11 @@
     <div class="bg__emojis" data-bg-emojis></div>
 </div>
 
-<x-layout.header/>
+<x-layout.app.header/>
 
 @yield("content")
 
-<x-layout.footer/>
+<x-layout.app.footer/>
 
 </body>
 </html>

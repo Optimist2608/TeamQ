@@ -1,4 +1,4 @@
-@extends("layouts.main")
+@extends("layouts.app")
 
 @section("title", "Поиск тиммейтов для игр")
 
@@ -6,7 +6,8 @@
 
     <main>
         <div class="container page-head">
-            <nav class="page-head__crumbs"><a href="../index.blade.php">Главная</a> › <a href="chats.blade.php">Чаты</a>
+            <nav class="page-head__crumbs"><a href="../home.blade.php">Главная</a> › <a
+                    href="index.blade.php">Чаты</a>
                 › <span>SleepyAWP</span>
             </nav>
             <h1 class="page-head__title">Чат с SleepyAWP</h1>
@@ -36,8 +37,9 @@
                 <section class="conversation">
                     <header class="conversation__head"><span class="post-card__avatar">🦉</span>
                         <div><b>SleepyAWP</b><br><small>онлайн · CS2 · Master Guard</small></div>
-                        <a class="btn btn--sm" style="margin-left:auto" href="profile.blade.php">Профиль</a></header>
-                    <div class="conversation__post">📌 Объявление: <a class="link" href="post.blade.php">Играю по ночам.
+                        <a class="btn btn--sm" style="margin-left:auto" href="../profile.blade.php">Профиль</a></header>
+                    <div class="conversation__post">📌 Объявление: <a class="link" href="../posts/show.blade.php">Играю
+                            по ночам.
                             Кофе — за
                             мной, смоки — за тобой</a></div>
                     <div class="conversation__feed" data-chat-feed>

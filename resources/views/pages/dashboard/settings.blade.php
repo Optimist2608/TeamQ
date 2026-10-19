@@ -1,4 +1,4 @@
-@extends("layouts.main")
+@extends("layouts.app")
 
 @section("title", "Поиск тиммейтов для игр")
 
@@ -6,7 +6,7 @@
 
     <main>
         <div class="container page-head">
-            <nav class="page-head__crumbs"><a href="../index.blade.php">Главная</a> › <a href="dashboard.blade.php">Кабинет</a>
+            <nav class="page-head__crumbs"><a href="../home.blade.php">Главная</a> › <a href="dashboard.blade.php">Кабинет</a>
                 › <span>Настройки</span>
             </nav>
             <h1 class="page-head__title">Настройки профиля</h1>
@@ -14,7 +14,7 @@
         </div>
         <div class="container layout">
             <nav class="panel side-nav"><a class="is-active" href="settings-profile.html">Профиль</a><a href="#">Безопасность</a><a
-                    href="dashboard.blade.php">← В кабинет</a></nav>
+                        href="dashboard.blade.php">← В кабинет</a></nav>
             <div class="stack">
                 <form class="panel" action="#" method="post" enctype="multipart/form-data">
                     <h2 class="panel__title">Профиль</h2>
@@ -31,13 +31,13 @@
                             <span class="field__hint">JPG, PNG или GIF, до 2 МБ</span></div>
                     </div>
                     <div class="field-row"><label class="field"><span class="field__label">Имя</span><input
-                                class="field__input" type="text" value="xX_PepeCarry_Xx"></label>
+                                    class="field__input" type="text" value="xX_PepeCarry_Xx"></label>
                         <label class="field"><span class="field__label">Discord-тег</span><input class="field__input"
                                                                                                  type="text"
                                                                                                  value="PepeCarry#1337"></label>
                     </div>
                     <div class="field-row"><label class="field"><span class="field__label">Возраст</span><input
-                                class="field__input" type="number" min="12" max="99" value="22"></label>
+                                    class="field__input" type="number" min="12" max="99" value="22"></label>
                         <label class="field"><span class="field__label">Часовой пояс</span><select class="field__input">
                                 <option value="2">UTC+2 Калининград</option>
                                 <option value="3" selected>UTC+3 Москва</option>
@@ -54,7 +54,7 @@
                                                                                                 type="password"
                                                                                                 autocomplete="current-password"></label>
                     <div class="field-row"><label class="field"><span class="field__label">Новый пароль</span><input
-                                class="field__input" type="password" autocomplete="new-password"></label>
+                                    class="field__input" type="password" autocomplete="new-password"></label>
                         <label class="field"><span class="field__label">Повтори пароль</span><input class="field__input"
                                                                                                     type="password"
                                                                                                     autocomplete="new-password"></label>

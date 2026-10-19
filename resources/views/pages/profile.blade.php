@@ -1,4 +1,4 @@
-@extends("layouts.main")
+@extends("layouts.app")
 
 @section("title", "Поиск тиммейтов для игр")
 
@@ -6,7 +6,7 @@
 
     <main>
         <div class="container page-head">
-            <nav class="page-head__crumbs"><a href="../index.blade.php">Главная</a> › <a
+            <nav class="page-head__crumbs"><a href="home.blade.php">Главная</a> › <a
                     href="games.blade.php">Игроки</a> › <span>xX_PepeCarry_Xx</span>
             </nav>
             <h1 class="page-head__title">Профиль игрока</h1>
@@ -90,7 +90,7 @@
                         <p class="post-card__text">Играю вечерами по МСК. Нужен тот, кто ставит варды и не ругается.</p>
                         <div class="post-card__tags"><span class="tag">🎤 микрофон</span><span class="tag tag--yellow">Саппорт</span><span
                                 class="tag tag--pink">2/5 мест</span></div>
-                        <a class="btn btn--primary btn--block" href="post.blade.php">Подробнее</a></article>
+                        <a class="btn btn--primary btn--block" href="posts/show.blade.php">Подробнее</a></article>
                     <article class="post-card" data-role="off" data-rating="high" data-mic="1" data-slots="3"
                              data-date="7">
                         <div class="post-card__head"><span class="post-card__avatar">🍕</span>
@@ -101,7 +101,7 @@
                         <p class="post-card__text">Любимый герой — Пудж. Любимое место — чужой лес.</p>
                         <div class="post-card__tags"><span class="tag">🎤 микрофон</span><span class="tag tag--yellow">Оффлейн</span><span
                                 class="tag tag--pink">3/5 мест</span></div>
-                        <a class="btn btn--primary btn--block" href="post.blade.php">Подробнее</a></article>
+                        <a class="btn btn--primary btn--block" href="posts/show.blade.php">Подробнее</a></article>
                 </aside>
             </div>
         </div>

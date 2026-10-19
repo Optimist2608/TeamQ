@@ -1,14 +1,13 @@
-@extends("layouts.main")
+@extends("layouts.app")
 
 @section("title", "Поиск тиммейтов для игр")
 
 @section("content")
 
-
-
     <main>
         <div class="container page-head">
-            <nav class="page-head__crumbs"><a href="../index.blade.php">Главная</a> › <a href="dashboard.blade.php">Кабинет</a>
+            <nav class="page-head__crumbs"><a href="../home.blade.php">Главная</a> › <a
+                    href="../dashboard/dashboard.blade.php">Кабинет</a>
                 › <span>Новое объявление</span>
             </nav>
             <h1 class="page-head__title">Создать объявление</h1>
@@ -64,7 +63,7 @@
                 </div>
                 <div class="form__actions">
                     <button class="btn btn--primary btn--lg" type="submit">Опубликовать</button>
-                    <a class="btn btn--ghost btn--lg" href="dashboard.blade.php">Отмена</a></div>
+                    <a class="btn btn--ghost btn--lg" href="../dashboard/dashboard.blade.php">Отмена</a></div>
             </form>
             <aside class="panel panel--sticky"><h2 class="panel__title">Так увидят твоё объявление</h2>
                 <article class="post-card" style="box-shadow:none">

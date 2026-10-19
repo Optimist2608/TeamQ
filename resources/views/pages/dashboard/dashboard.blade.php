@@ -1,27 +1,26 @@
-@extends("layouts.main")
+@extends("layouts.app")
 
 @section("title", "Поиск тиммейтов для игр")
 
 @section("content")
 
-
     <main>
         <div class="container page-head">
-            <nav class="page-head__crumbs"><a href="../index.blade.php">Главная</a> › <span>Кабинет</span></nav>
+            <nav class="page-head__crumbs"><a href="../home.blade.php">Главная</a> › <span>Кабинет</span></nav>
             <h1 class="page-head__title">Привет, PepeCarry 👋</h1>
             <p class="page-head__text">Тут твои объявления, отклики и чаты. Всё под контролем (почти).</p>
-            <div class="page-head__actions"><a class="btn btn--primary" href="post-create.blade.php">+ Новое
+            <div class="page-head__actions"><a class="btn btn--primary" href="../posts/create.blade.php">+ Новое
                     объявление</a><a
-                    class="btn btn--ghost" href="settings-profile.blade.php">Редактировать профиль</a></div>
+                    class="btn btn--ghost" href="settings.blade.php">Редактировать профиль</a></div>
         </div>
         <div class="container layout">
             <aside class="stack">
                 <div class="panel panel--pink author-box"><span class="avatar-xl">🐸</span><b>xX_PepeCarry_Xx</b><small>pepe@teamq.gg</small><small>На
                         сайте с марта 2026 · Уровень 12</small><a class="btn btn--ghost btn--block"
-                                                                  href="profile.blade.php">Мой
+                                                                  href="../profile.blade.php">Мой
                         профиль</a></div>
                 <nav class="panel side-nav"><a class="is-active" href="dashboard.html">Обзор</a><a href="#">Мои
-                        объявления</a><a href="#">Мои отклики</a><a href="settings-profile.blade.php">Настройки</a>
+                        объявления</a><a href="#">Мои отклики</a><a href="settings.blade.php">Настройки</a>
                 </nav>
             </aside>
             <section>
@@ -45,14 +44,16 @@
                                 <div class="list-row__title">Ищу саппорта. Обещаю не винить в поражении (почти)</div>
                                 <div class="list-row__meta">Dota 2 · 4 отклика</div>
                             </div>
-                            <span class="badge">открыто</span><a class="btn btn--sm" href="post.blade.php">Открыть</a>
+                            <span class="badge">открыто</span><a class="btn btn--sm"
+                                                                 href="../posts/show.blade.php">Открыть</a>
                         </div>
                         <div class="list-row">
                             <div class="list-row__main">
                                 <div class="list-row__title">Беру в пати только тех, кто не пикает Джетт</div>
                                 <div class="list-row__meta">Valorant · 1 отклик</div>
                             </div>
-                            <span class="badge">открыто</span><a class="btn btn--sm" href="post.blade.php">Открыть</a>
+                            <span class="badge">открыто</span><a class="btn btn--sm"
+                                                                 href="../posts/show.blade.php">Открыть</a>
                         </div>
                         <div class="list-row">
                             <div class="list-row__main">
@@ -60,7 +61,8 @@
                                 <div class="list-row__meta">CS2 · 0 откликов</div>
                             </div>
                             <span class="badge badge--closed">закрыто</span><a class="btn btn--sm"
-                                                                               href="post.blade.php">Открыть</a></div>
+                                                                               href="../posts/show.blade.php">Открыть</a>
+                        </div>
                     </div>
                     <div data-panel="resp" hidden>
                         <div class="list-row">
@@ -68,7 +70,8 @@
                                 <div class="list-row__title">Играю по ночам. Кофе — за мной, смоки — за тобой</div>
                                 <div class="list-row__meta">SleepyAWP · CS2</div>
                             </div>
-                            <span class="badge">принят</span><a class="btn btn--sm" href="chat.blade.php">В чат</a>
+                            <span class="badge">принят</span><a class="btn btn--sm" href="../chats/show.blade.php">В
+                                чат</a>
                         </div>
                         <div class="list-row">
                             <div class="list-row__main">
@@ -89,20 +92,20 @@
                                 <div class="list-row__title">SleepyAWP</div>
                                 <div class="list-row__meta">Го в катку? Я уже в лобби</div>
                             </div>
-                            <span class="dialog__badge">2</span><a class="btn btn--sm" href="chat.blade.php">Открыть</a>
+                            <span class="dialog__badge">2</span><a class="btn btn--sm" href="../chats/show.blade.php">Открыть</a>
                         </div>
                         <div class="list-row">
                             <div class="list-row__main">
                                 <div class="list-row__title">PizzaPudge</div>
                                 <div class="list-row__meta">Хук был намеренный, честно</div>
                             </div>
-                            <a class="btn btn--sm" href="chat.blade.php">Открыть</a></div>
+                            <a class="btn btn--sm" href="../chats/show.blade.php">Открыть</a></div>
                         <div class="list-row">
                             <div class="list-row__main">
                                 <div class="list-row__title">OctoMain</div>
                                 <div class="list-row__meta">Принял твой отклик 🔥</div>
                             </div>
-                            <span class="dialog__badge">1</span><a class="btn btn--sm" href="chat.blade.php">Открыть</a>
+                            <span class="dialog__badge">1</span><a class="btn btn--sm" href="../chats/show.blade.php">Открыть</a>
                         </div>
                     </div>
                 </div>

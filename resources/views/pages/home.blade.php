@@ -1,4 +1,4 @@
-@extends("layouts.main")
+@extends("layouts.app")
 
 @section("title", "Поиск тиммейтов для игр")
 
@@ -106,57 +106,36 @@
             </ol>
         </section>
 
+        {{-- топ --}}
         <section class="section container section--split" data-reveal>
-            <div>
-                <h2 class="section__title">🏆 Зал славы</h2>
-                <ul class="leaderboard">
-                    <li class="leaderboard__item"><span class="leaderboard__place">🥇</span><span
-                            class="post-card__avatar">🐸</span><span
-                            class="leaderboard__name">xX_PepeCarry_Xx<small
-                                class="leaderboard__game">Dota 2</small></span><span
-                            class="leaderboard__rating">★ 4.9</span></li>
-                    <li class="leaderboard__item"><span class="leaderboard__place">🥈</span><span
-                            class="post-card__avatar">🦆</span><span
-                            class="leaderboard__name">QuackAttack<small
-                                class="leaderboard__game">Valorant</small></span><span
-                            class="leaderboard__rating">★ 4.8</span></li>
-                    <li class="leaderboard__item"><span class="leaderboard__place">🥉</span><span
-                            class="post-card__avatar">🦉</span><span
-                            class="leaderboard__name">SleepyAWP<small class="leaderboard__game">CS2</small></span><span
-                            class="leaderboard__rating">★ 4.8</span></li>
-                    <li class="leaderboard__item"><span class="leaderboard__place">4</span><span
-                            class="post-card__avatar">🍕</span><span
-                            class="leaderboard__name">PizzaPudge<small
-                                class="leaderboard__game">Dota 2</small></span><span
-                            class="leaderboard__rating">★ 4.7</span></li>
-                    <li class="leaderboard__item"><span class="leaderboard__place">5</span><span
-                            class="post-card__avatar">🧱</span><span
-                            class="leaderboard__name">CreeperEnjoyer<small
-                                class="leaderboard__game">Minecraft</small></span><span
-                            class="leaderboard__rating">★ 4.6</span>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="section__title">Нам пишут</h2>
-                <div class="reviews">
-                    <blockquote class="review review--pink"><span class="review__avatar">🐙</span>
-                        <p class="review__text">Нашёл команду за 4 минуты. Раньше искал 4 часа и находил только
-                            токсиков.</p>
-                        <footer class="review__author">— OctoMain</footer>
-                    </blockquote>
-                    <blockquote class="review review--yellow"><span class="review__avatar">🧃</span>
-                        <p class="review__text">Тиммейт не афкашил ни разу. Я в шоке, лёг подумать.</p>
-                        <footer class="review__author">— JuiceBoxEnjoyer</footer>
-                    </blockquote>
-                    <blockquote class="review review--blue"><span class="review__avatar">🦖</span>
-                        <p class="review__text">Отзывы реально работают: токсика обошёл стороной. Спасибо, TeamQ!</p>
-                        <footer class="review__author">— RexOnKeyboard</footer>
-                    </blockquote>
-                </div>
-            </div>
-        </section>
 
+            <x-widgets.leaderboard.main :leaders="[[
+    'author' => 'xxxx',
+    'avatarSrc' => '',
+    'rating' => '4.6'
+]]"/>
+
+
+            <x-widgets.reviews.main :reviews="[
+            [
+            'avatarSrc' => '',
+            'text' => 'Нашёл команду за 4 минуты. Раньше искал 4 часа и находил только токсиков.',
+            'author' => 'OctoMain',
+            ],
+            [
+            'avatarSrc' => '/',
+            'text' => 'Тиммейт не афкашил ни разу. Я в шоке, лёг подумать.',
+            'author' => 'JuiceBoxEnjoyer',
+            ],
+            [
+            'avatarSrc' => '',
+            'text' => 'Отзывы реально работают: токсика обошёл стороной. Спасибо, TeamQ!',
+            'author' => 'RexOnKeyboard',
+            ],
+            ]"/>
+
+
+        </section>
         <section class="section container" data-reveal>
             <h2 class="section__title">Частые вопросы</h2>
             <div class="faq">
