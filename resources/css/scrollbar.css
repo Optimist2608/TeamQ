@@ -1,0 +1,28 @@
+html {
+    scrollbar-width: auto;
+    scrollbar-color: var(--color-primary) var(--color-ink);
+}
+
+::-webkit-scrollbar {
+    width: 18px;
+    height: 18px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-ink);
+    border-left: 3px solid var(--color-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border: 3px solid var(--color-ink);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-pink);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: var(--color-yellow);
+}

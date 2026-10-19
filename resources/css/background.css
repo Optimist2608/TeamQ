@@ -1,0 +1,81 @@
+body {
+    background-image: none;
+    position: relative;
+}
+
+.bg {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+    background: linear-gradient(160deg, #1b1033 0%, #14101f 55%, #0e1a2b 100%);
+}
+
+.bg__blob {
+    position: absolute;
+    width: 46vw;
+    height: 46vw;
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: .35;
+    animation: blob 18s ease-in-out infinite alternate;
+}
+
+.bg__blob--green {
+    background: var(--color-primary);
+    top: -12vw;
+    left: -10vw;
+}
+
+.bg__blob--pink {
+    background: var(--color-pink);
+    right: -14vw;
+    top: 30vh;
+    animation-delay: -6s;
+}
+
+.bg__blob--blue {
+    background: var(--color-blue);
+    bottom: -20vw;
+    left: 20vw;
+    animation-delay: -12s;
+}
+
+@keyframes blob {
+    to {
+        transform: translate(8vw, 6vw) scale(1.2);
+    }
+}
+
+.bg__grid {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, .06) 2px, transparent 2px), linear-gradient(90deg, rgba(255, 255, 255, .06) 2px, transparent 2px);
+    background-size: 48px 48px;
+    animation: grid 6s linear infinite;
+}
+
+@keyframes grid {
+    to {
+        background-position: 0 48px;
+    }
+}
+
+.bg__emoji {
+    position: absolute;
+    opacity: .22;
+    animation: float var(--dur, 14s) ease-in-out infinite alternate;
+}
+
+@keyframes float {
+    to {
+        transform: translate(var(--dx, 30px), -60px) rotate(var(--rot, 25deg));
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .bg *, .bg__blob, .bg__grid {
+        animation: none;
+    }
+}

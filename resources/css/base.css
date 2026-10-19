@@ -1,0 +1,56 @@
+:root {
+    --color-bg: #14101f;
+    --color-surface: #fffdf4;
+    --color-text: #f5f1ff;
+    --color-ink: #14101f;
+    --color-primary: #b6ff3b;
+    --color-pink: #ff4fa3;
+    --color-yellow: #ffd93b;
+    --color-blue: #5cc8ff;
+
+    --font-logo: 'RubikMonoOne-Regular', 'PixelifySans-Bold', monospace;
+    --font-title: 'PixelifySans-Bold', 'Courier New', monospace;
+    --font-main: 'JetBrainsMono-Regular', monospace;
+    --font-bold: 'JetBrainsMono-Bold', monospace;
+
+    --border: 3px solid var(--color-ink);
+    --shadow: 5px 5px 0 var(--color-ink);
+    --shadow-accent: 6px 6px 0 var(--color-primary);
+    --radius: 12px;
+    --container: 1180px;
+    --gap: 24px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, button, input {
+    font-family: var(--font-main), sans-serif;
+    color: var(--color-text);
+    font-size: 18px;
+}
+
+body {
+    background: var(--color-bg);
+    background-image: radial-gradient(rgba(255, 255, 255, .07) 1px, transparent 1px);
+    background-size: 22px 22px;
+    line-height: 1.5;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    background: none;
+}
+
+.container {
+    width: min(var(--container), 100% - 32px);
+    margin-inline: auto;
+}

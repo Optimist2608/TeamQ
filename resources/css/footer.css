@@ -1,0 +1,124 @@
+.footer {
+    position: relative;
+    margin-top: 90px;
+    padding-top: 56px;
+    background: var(--color-primary);
+    color: var(--color-ink);
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -20px;
+    height: 20px;
+    background: linear-gradient(135deg, var(--color-primary) 25%, transparent 25%) -10px 0,
+    linear-gradient(225deg, var(--color-primary) 25%, transparent 25%) -10px 0;
+    background-size: 28px 28px;
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: 1.6fr repeat(3, 1fr);
+    gap: 32px;
+}
+
+.footer__logo {
+    font-family: var(--font-logo);
+    font-size: 2rem;
+    letter-spacing: -2px;
+}
+
+.footer__slogan {
+    margin: 12px 0 18px;
+    max-width: 28ch;
+    font-family: var(--font-bold);
+}
+
+.footer__socials {
+    display: flex;
+    gap: 10px;
+}
+
+.footer__social {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border: var(--border);
+    border-radius: 10px;
+    background: var(--color-surface);
+    box-shadow: 3px 3px 0 var(--color-ink);
+    font-family: var(--font-bold);
+    font-size: .85rem;
+    transition: transform .15s, background .15s;
+}
+
+.footer__social:hover {
+    background: var(--color-pink);
+    transform: rotate(-8deg) scale(1.1);
+}
+
+.footer__col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer__title {
+    margin-bottom: 6px;
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+}
+
+.footer__col a {
+    width: fit-content;
+    font-size: .9rem;
+}
+
+.footer__col a:hover {
+    background: var(--color-ink);
+    color: var(--color-primary);
+    padding-inline: 6px;
+    margin-inline: -6px;
+}
+
+.footer__giant {
+    overflow: hidden;
+    margin-top: 32px;
+    text-align: center;
+    white-space: nowrap;
+    line-height: .85;
+    font-family: var(--font-logo);
+    font-size: clamp(4rem, 19vw, 15rem);
+    letter-spacing: -.04em;
+    color: transparent;
+    -webkit-text-stroke: 3px var(--color-ink);
+    transition: color .3s;
+}
+
+.footer__giant:hover {
+    color: var(--color-pink);
+}
+
+.footer__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-block: 18px 24px;
+    font-size: .8rem;
+    border-top: var(--border);
+}
+
+@media (max-width: 860px) {
+    .footer__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer__brand {
+        grid-column: 1 / -1;
+    }
+}
